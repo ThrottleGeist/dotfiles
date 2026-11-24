@@ -1,0 +1,48 @@
+[user]
+  name = ThrottleGeist
+  email = 221166718+ThrottleGeist@users.noreply.github.com
+  signingkey = C0F3BBC62EC1EFA8
+
+[push]
+  autoSetupRemote = true
+
+[commit]
+  verbose = true
+  gpgsign = true
+
+[gpg]
+  program = /usr/local/MacGPG2/bin/gpg2
+
+[tag]
+  forceSignAnnotated = true
+
+[init]
+  defaultBranch = main
+
+[core]
+  editor = nvim
+
+[alias]
+  st = status
+  co = checkout
+  ci = commit
+  cia = commit --amend
+  ciar = commit --amend --reset-author
+  br = branch
+  df = diff
+  dfs = diff --staged
+  dft = difftool
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset %Cblue(%an)%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit
+  cp = cherry-pick
+  fu = fetch upstream
+  f = fetch
+  sb = fetch --all -pP
+
+[pull]
+  ff = only
+
+[rebase]
+  autosquash = true
+
+[advice]
+  detachedHead = false
